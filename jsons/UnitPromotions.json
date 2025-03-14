@@ -1,0 +1,37 @@
+[
+
+
+
+
+
+
+
+
+]
+/*
+"[+1] Movement",
+"[+1] Sight",
+"[+200]% Strength",
+"[9] additional attacks per turn",
+"Can move after attacking",
+"[This Unit] gains [2] movement",
+"[This Unit] loses [2] movement",
+<upon losing at least [5] HP in a single attack>
+<vs cities>
+<when attacking>
+<during a Golden Age>
+<in [Foreign Land] tiles>
+<in [Friendly Land] tiles>
+<when defending>
+<vs [Wounded] units>
+<when fighting in [Rough terrain] tiles>
+"Ignores Zone of Control",
+<upon being promoted>
+"[Target Unit] gains the [] status for [10] turn(s) <upon damaging a [Military] unit>",
+"[This Unit] takes [10] damage <upon turn end>",
+[{non-[Long-Range Naval]} {non-[Short-Range Naval]} {non-[Drones]}]
+"Ranged attacks may be performed over obstacles",
+
+"[]% to Flank Attack bonuses",
+*/
+

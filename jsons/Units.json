@@ -1,0 +1,787 @@
+[
+
+
+
+
+	// Info according to Civilization Wiki and https://www.civfanatics.com/civ5/info/units/gods-and-kings/
+
+	/* Ancient Era */
+	{
+		"name": "Worker",
+		"unitType": "Civilian",
+		"movement": 2,
+		"uniques": ["Can build [Land] improvements on tiles",
+		
+		  "[1] free [Town Center] units appear <for [2] movement> <costs [200] [Wood point]> <costs [150] [Stone point]>",
+		  "[1] free [Watchtower] units appear <for [2] movement> <costs [35] [Wood point]>",
+		  "[1] free [Palisade Wall] units appear <for [2] movement> <costs [50] [Wood point]>",
+		  "[1] free [Stone Wall] units appear <for [2] movement> <costs [50] [Stone point]>",
+		  "[1] free [Castle] units appear <for [2] movement> <costs [100] [Wood point]> <costs [100] [Stone point]>",
+		  "[1] free [Archery Range] units appear <for [2] movement> <costs [75] [Wood point]>",
+		  "[1] free [Stable] units appear <for [2] movement> <costs [100] [Wood point]> <costs [50] [Stone point]>",
+		  "[1] free [Blacksmith] units appear <for [2] movement> <costs [75] [Wood point]> <costs [75] [Stone point]>",
+		  "[1] free [Workshop] units appear <for [2] movement> <costs [50] [Wood point]> <costs [100] [Stone point]>",
+		  
+		  
+		  "[1] free [Market] units appear <for [2] movement> <costs [50] [Wood point]> <costs [25] [Stone point]>",
+		  "[1] free [University] units appear <for [2] movement> <costs [75] [Wood point]> <costs [50] [Stone point]>",
+		  
+		  
+		  "Consumes [-5] [Gold point] <in [Luxury resource] tiles> <hidden from users>",
+		  "Consumes [-10] [Food point] <in [Farm] tiles> <hidden from users>",
+		  "Consumes [-10] [Wood point] <in [Lumber mill] tiles> <hidden from users>",
+		  "Consumes [-10] [Stone point] <in [Mine] tiles> <hidden from users>",
+		  "Consumes [-5] [Food point] <in [Fishing Boats] tiles> <hidden from users>",
+		  
+		  
+		  "Consumes [-5] [Food point] <in [Farm] tiles> <with [2] to [6] neighboring [Farm] tiles> <hidden from users>",
+		  
+		  /*"Consumes [-5] [Stone point] <in [Mine] tiles> <hidden from users>",
+		  "Consumes [-5] [Wood point] <in [Lumber mill] tiles> <hidden from users>",
+		  "Consumes [-5] [Food point] <in [Farm] tiles> <hidden from users>",
+		  "Consumes [-5] [Food point] <in [Fishing Boats] tiles> <hidden from users>",*/
+		  
+		  
+		  
+		  
+		  
+		  
+		],
+		"cost": 45
+	},
+	{
+		"name": "Settler",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 70,
+		"uniques": [
+		"Founds a new city <by consuming this unit>",
+		//"Excess Food converted to Production when under construction",
+			"[1] free [Town Center] units appear <by consuming this unit>",
+			],
+		//"hurryCostModifier": 20
+	},
+	{
+		"name": "Scout",
+		"unitType": "Civilian",
+		"movement": 3,
+		"strength": 65,
+		"cost": 10,
+		"uniques": [
+		"[+1] Sight",
+		],
+		"attackSound": "nonmetalhit"
+	},
+    {
+        "name": "Archer", // 弓箭手
+        "unitType": "Army",
+        "range": 2,
+        "movement": 2,
+        "strength": 65,
+        "rangedStrength": 80,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 25,
+        //"promotions": [],
+        "uniques": [
+        
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Composite Bowman", // 复合弓兵
+        "unitType": "Army",
+        "range": 2,
+        "movement": 2,
+        "strength": 100,
+        "rangedStrength": 125,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 45,
+        //"promotions": [],
+        "uniques": [],
+        //"attackSound": ""
+    },
+    {
+        "name": "Crossbowman", // 弩手
+        "unitType": "Army",
+        "range": 2,
+        "movement": 2,
+        "strength": 100,
+        "rangedStrength": 150,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 80,
+        //"upgradesTo": "",
+        //"obsoleteTech": "",
+        //"promotions": [],
+        "uniques": [
+        
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Warrior", // 勇士
+        "unitType": "Army",
+        //"range": 2,
+        "movement": 2,
+        "strength": 100,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 25,
+        //"requiredTech": "",
+        //"promotions": [],
+        "uniques": [],
+        //"attackSound": ""
+    },
+    {
+        "name": "Swordsman", // 剑士
+        "unitType": "Army",
+        //"range": 2,
+        "movement": 2,
+        "strength": 150,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 45,
+        //"promotions": [],
+        "uniques": [
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Longswordsman", // 长剑
+        "unitType": "Army",
+        //"range": 2,
+        "movement": 2,
+        "strength": 175,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 80,
+        //"promotions": [],
+        "uniques": [
+        "[This Unit] heals [3] HP <upon losing at least [0] HP in a single attack>",
+        ],
+        //"attackSound": ""
+    },
+    /*{
+        "name": "Musketeer", // 火枪手
+        "unitType": "Army",
+        //"range": 2,
+        "movement": 2,
+        "strength": 26,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 110,
+        //"promotions": [],
+        "uniques": [],
+        //"attackSound": ""
+    },*/
+    {
+        "name": "Spearman", // 矛兵
+        "unitType": "Army",
+        //"range": 2,
+        "movement": 2,
+        "strength": 120,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 35,
+        //"promotions": [],
+        "uniques": [
+        "[+33]% Strength <when attacking>",
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Pikeman", // 长矛兵
+        "unitType": "Army",
+        //"range": 2,
+        "movement": 2,
+        "strength": 150,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 60,
+        //"promotions": [],
+        "uniques": [
+        "[+33]% Strength <when attacking>",
+        
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Horseman", // 骑手
+        "unitType": "Army",
+        //"range": 2,
+        "movement": 4,
+        "strength": 150,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 45,
+        //"promotions": [],
+        "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus",
+        
+        
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Chariot Archer", // 战车射手
+        "unitType": "Army",
+        "range": 2,
+        "movement": 3,
+        "strength": 100,
+        "rangedStrength": 100,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 45,
+        //"promotions": [],
+        "uniques": [
+        "Rough terrain penalty",
+        "No defensive terrain bonus",
+        //"Can move after attacking",
+        
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Knight", // 骑士
+        "unitType": "Army",
+        //"range": 2,
+        "movement": 5,
+        "strength": 200,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 90,
+        //"promotions": [],
+        "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus",
+        "[This Unit] heals [3] HP <upon losing at least [0] HP in a single attack>",
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Lancer", // 枪骑兵
+        "unitType": "Army",
+        //"range": 2,
+        "movement": 5,
+        "strength": 175,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 90,
+        //"promotions": [],
+        "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus",
+        "[+33]% Strength <when attacking>",
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Catapult", // 投石机
+        "unitType": "Army",
+        "range": 2,
+        "movement": 2,
+        "strength": 65,
+        "rangedStrength": 100,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 50,
+        //"promotions": [],
+        "uniques": [
+        "[+150]% Strength <vs [Build] units> <when attacking>",
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Trebuchet", // 抛石机
+        "unitType": "Army",
+        "range": 3,
+        "movement": 2,
+        "strength": 100,
+        "rangedStrength": 125,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 80,
+        //"promotions": [],
+        "uniques": [
+        "[+200]% Strength <vs [Build] units> <when attacking>",
+		"Must set up to ranged attack",
+        
+        ],
+        //"attackSound": ""
+    },
+    /*{
+	"name": "Galley", // 桨战船
+	"unitType": "Army",
+	//"range": 2,
+	"movement": 4,
+	"strength": 10,
+	//"rangedStrength": 10,
+	//"replaces": "",
+	//"uniqueTo": "",
+	"cost": 30,
+	//"promotions": [],
+	"uniques": [
+	"Cannot enter ocean tiles",
+	
+	],
+	//"attackSound": ""
+    },
+    {
+	"name": "Sailing Warship", // 风帆战船
+	"unitType": "Army",
+	//"range": 2,
+	"movement": 4,
+	"strength": 15,
+	//"rangedStrength": 10,
+	//"replaces": "",
+	//"uniqueTo": "",
+	"cost": 45,
+	"uniques": [
+	"Cannot enter ocean tiles",
+	],
+	//"attackSound": ""
+    },
+    {
+	"name": "Heavy Galleass", // 重桨帆船
+	"unitType": "Army",
+	"range": 2,
+	"movement": 5,
+	"strength": 15,
+	"rangedStrength": 17,
+	//"replaces": "",
+	//"uniqueTo": "",
+	"cost": 75,
+	//"promotions": [],
+	"uniques": [
+	"Never appears as a Barbarian unit",
+	],
+	//"attackSound": ""
+    },
+    {
+	"name": "Light Sloop", // 轻帆船
+	"unitType": "Army",
+	//"range": 2,
+	"movement": 2,
+	"strength": 20,
+	//"rangedStrength": 10,
+	//"replaces": "",
+	//"uniqueTo": "",
+	"cost": 90,
+	//"promotions": [],
+	"uniques": [
+	"Never appears as a Barbarian unit",
+	],
+	//"attackSound": ""
+    }*/
+
+//"Can upgrade to [Missile Crusier] <after discovering [Rocketry]>",
+/*{
+		"name": "Missionary",
+		"unitType": "Civilian",
+		"uniques": ["Can Spread Religion <for [3] movement> <[2] times> <after which this unit is consumed>",
+            "May enter foreign tiles without open borders, but loses [250] religious strength each turn it ends there",
+			"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+			"[-1] Sight", "Unbuildable", "Religious Unit", "Only available <when religion is enabled>",],
+		"movement": 3,
+		"religiousStrength": 1000
+	},
+	{
+		"name": "Inquisitor",
+		"unitType": "Civilian",
+		"uniques": ["Prevents spreading of religion to the city it is next to",
+			"Can remove other religions from cities <in [Friendly] tiles> <once> <after which this unit is consumed>",
+            "Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+			"[+1] Sight", "Only available <when religion is enabled>", "Unbuildable", "Religious Unit"
+		],
+		"movement": 2
+	},
+{
+		"name": "Great Artist",//大艺术家
+		"unitType": "Civilian",
+		"uniques": [
+		"Can generate a large amount of culture",
+		"Is part of Great Person group [Culture]",
+            "Empire enters a [8]-turn Gold pointen Age <by consuming this unit>",
+            "Can instantly construct a [Landmark] improvement <by consuming this unit>",
+            "Great Person - [Culture]", "Unbuildable", "Uncapturable"],
+		"movement": 2
+	},
+	{
+		"name": "Great Scientist",//大科学家
+		"unitType": "Civilian",
+		"uniques": [
+		"Is part of Great Person group [Science]",
+            "Can hurry technology research",
+            "Can instantly construct a [Academy] improvement <by consuming this unit>",
+            "Great Person - [Science]", "Unbuildable", "Uncapturable"],
+		"movement": 2
+	},
+	{
+		"name": "Great Merchant",//大商人
+		"unitType": "Civilian",
+		"uniques": [
+		"Is part of Great Person group [Gold point]",
+		"Can undertake a trade mission with City-State, giving a large sum of Gold point and [50] Influence",
+            "Can instantly construct a [Customs house] improvement <by consuming this unit>",
+			"Great Person - [Gold point]", "Unbuildable", "Uncapturable",
+			],
+		"movement": 2
+	},
+	{
+		"name": "Great Engineer",//大工程师
+		"unitType": "Civilian",
+		"uniques": [
+		"Is part of Great Person group [Production]",
+		"Can speed up construction of a building",
+            "Can instantly construct a [Manufactory] improvement <by consuming this unit>",
+            "Great Person - [Production]", "Unbuildable", "Uncapturable",
+            ],
+		"movement": 2
+	},
+	{
+		"name": "Great Prophet",//大预言家
+		"unitType": "Civilian",
+		"uniques": [
+            "Can instantly construct a [Holy site] improvement <by consuming this unit> <if it hasn't used other actions yet>",
+            "Can Spread Religion <for [2] movement> <[4] times> <after which this unit is consumed>",
+			"Removes other religions when spreading religion",
+            "May found a religion <by consuming this unit> <if it hasn't used other actions yet>",
+            "May enhance a religion <by consuming this unit>  <if it hasn't used other actions yet>",
+			"May enter foreign tiles without open borders", "[-1] Sight", "Great Person - [Faith]",
+			"Unbuildable", "Religious Unit", "Only available <when religion is enabled>",
+			"Takes your religion over the one in their birth city"
+		],
+		"movement": 2,
+		"religiousStrength": 1000
+	},
+	{
+		"name": "Great General",//大军事家
+		"unitType": "Civilian",
+		"uniques": [
+            "Empire enters a [8]-turn Gold pointen Age <by consuming this unit>",
+            "[+15]% Strength bonus for [Military] units within [2] tiles",
+            "Invisible to non-adjacent units",
+            
+            
+            "Can instantly construct a [Citadel] improvement <by consuming this unit>",
+			"Great Person - [War]", "Unbuildable", "Uncapturable",
+			],
+		"movement": 2
+	},*/
+	
+	
+	
+	//
+	//
+	//
+	//
+	//
+	//以下是建筑
+	{
+		"name": "Town Center",//城镇中心
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 300,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Consumes [-5] [Gold point]",
+		"[1] free [Warrior] units appear <for [1] movement> <costs [50] [Food point]>",
+		"[1] free [Worker] units appear <for [1] movement> <costs [50] [Food point]>",
+		"[1] free [Scout] units appear <for [1] movement> <costs [30] [Food point]>",
+		"[This Unit] heals [5] HP <upon losing at least [0] HP in a single attack>",
+		"Free Technology <costs [100] [Tech point]>",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Watchtower",//哨塔
+		"unitType": "Build",
+		"range": 2,
+		"rangedStrength": 100,
+		"movement": 1,
+		"strength": 100,
+		"cost": 0,
+		"uniques": [
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"[This Unit] heals [3] HP <upon losing at least [0] HP in a single attack>",
+		"[+2] Sight",
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Palisade Wall",//木墙
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 150,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"[This Unit] heals [3] HP <upon losing at least [0] HP in a single attack>",
+		
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Stone Wall",//石墙
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 200,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"[This Unit] heals [5] HP <upon losing at least [0] HP in a single attack>",
+		
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Castle",//城堡
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 300,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"[This Unit] heals [5] HP <upon losing at least [0] HP in a single attack>",
+		
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Castle Embrasure",//城堡射击口
+		"unitType": "Build",
+		"range": 4,
+		"rangedStrength": 150,
+		"movement": 2,
+		"strength": 150,
+		"cost": 0,
+		"uniques": [
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"[This Unit] heals [5] HP <upon losing at least [0] HP in a single attack>",
+		"[+1] additional attacks per turn",
+		
+		],
+		//"attackSound": ""
+	},
+	
+	
+	
+	{
+		"name": "Archery Range",//靶场
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 200,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"[1] free [Archer] units appear <for [1] movement> <costs [50] [Food point]> <costs [10] [Gold point]> <after discovering [Archer]>",
+		"[1] free [Composite Bowman] units appear <for [1] movement> <costs [75] [Food point]> <costs [25] [Gold point]> <after discovering [Composite Bowman]>",
+		"[1] free [Crossbowman] units appear <for [1] movement> <costs [125] [Food point]> <costs [40] [Gold point]> <after discovering [Crossbowman]>",
+		"[This Unit] heals [5] HP <upon losing at least [0] HP in a single attack>",
+		
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Stable",//训马场
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 200,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"[1] free [Horseman] units appear <for [1] movement> <costs [100] [Food point]> <costs [25] [Gold point]> <after discovering [Horseman]>",
+		"[1] free [Chariot Archer] units appear <for [1] movement> <costs [100] [Food point]> <costs [25] [Gold point]> <after discovering [Chariot Archer]>",
+		"[1] free [Knight] units appear <for [1] movement> <costs [175] [Food point]> <costs [40] [Gold point]> <after discovering [Knight]>",
+		"[1] free [Lancer] units appear <for [1] movement> <costs [175] [Food point]> <costs [40] [Gold point]> <after discovering [Lancer]>",
+		"[This Unit] heals [5] HP <upon losing at least [0] HP in a single attack>",
+		
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Blacksmith",//铁匠铺
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 200,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"[1] free [Spearman] units appear <for [1] movement> <costs [50] [Food point]> <costs [10] [Gold point]> <after discovering [Spearman]>",
+		"[1] free [Swordsman] units appear <for [1] movement> <costs [75] [Food point]> <costs [25] [Gold point]> <after discovering [Swordsman]>",
+		"[1] free [Longswordsman] units appear <for [1] movement> <costs [125] [Food point]> <costs [40] [Gold point]> <after discovering [Longswordsman]>",
+		"[1] free [Pikeman] units appear <for [1] movement> <costs [100] [Food point]> <costs [25] [Gold point]> <after discovering [Pikeman]>",
+		"[This Unit] heals [5] HP <upon losing at least [0] HP in a single attack>",
+		
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "Workshop",//工匠坊
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 200,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"[1] free [Catapult] units appear <for [1] movement> <costs [75] [Food point]> <costs [25] [Gold point]> <after discovering [Catapult]>",
+		"[1] free [Trebuchet] units appear <for [1] movement> <costs [125] [Food point]> <costs [40] [Gold point]> <after discovering [Trebuchet]>",
+		"[This Unit] heals [5] HP <upon losing at least [0] HP in a single attack>",
+		
+		],
+		//"attackSound": ""
+	},
+	
+	
+	
+	{
+		"name": "Market",//贸易站
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 100,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Consumes [-5] [Gold point]",
+		"[This Unit] heals [5] HP <upon losing at least [0] HP in a single attack>",
+		
+		],
+		//"attackSound": ""
+	},
+	{
+		"name": "University",//学院
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 150,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Provides [2] [Tech point]",
+		"Provides [1] [Tech point] <with [1] to [6] neighboring [University] tiles>",
+		"Provides [1] [Tech point] <with [2] to [6] neighboring [University] tiles>",
+		"Provides [1] [Tech point] <with [3] to [6] neighboring [University] tiles>",
+		"Provides [1] [Tech point] <with [4] to [6] neighboring [University] tiles>",
+		"Provides [1] [Tech point] <with [5] to [6] neighboring [University] tiles>",
+		"Provides [1] [Tech point] <with [6] to [6] neighboring [University] tiles>",
+		
+		"[This Unit] heals [5] HP <upon losing at least [0] HP in a single attack>",
+		
+		],
+		//"attackSound": ""
+	},
+	
+	
+	
+	
+	
+	
+	
+	/*{
+		"name": "xxxxxxxr",//
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 200,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"[1] free [xxxxxxx] units appear <for [1] movement> <costs [50] [Food point]> <costs [10] [Gold point]> <after discovering [xxxxxxx]>",
+		"[1] free [xxxxxxx] units appear <for [1] movement> <costs [75] [Food point]> <costs [25] [Gold point]> <after discovering [xxxxxxx]>",
+		"[1] free [xxxxxxx] units appear <for [1] movement> <costs [125] [Food point]> <costs [40] [Gold point]> <after discovering [xxxxxxx]>",
+		"[This Unit] heals [5] HP <upon losing at least [0] HP in a single attack>",
+		
+		],
+		//"attackSound": ""
+	},*/
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+]

@@ -1,0 +1,329 @@
+[//人口增长10, 14，20
+	//Spectator
+	{
+		"name": "Spectator",
+		"outerColor": [255,255,255]
+//		"innerColor": [255,255,255]
+
+	},
+	
+	
+	{
+		"name": "China",
+		"leaderName": "Wu Zetian",
+		"adjective": ["Chinese"],
+		//"preferredVictoryType": "Scientific",
+		//"personality": "Wu Zetian",
+
+        "startIntroPart1": "Heaven itself bends before your beauty, Empress Wu Zetian, ruler of eternal China! You lead one of the oldest and greatest civilization of humanity. In your time, China stood at the forefront of science and technology, bringing the world such contributions as gunpowder, the printing press, and the world of Confucius, and this, long before the rest of the world was mature enough to make the same discoveries!",
+        "startIntroPart2": "Great Queen, can you make China prevail again, using your divine intelligence and beauty? China stands for greatness, and all its enemies will be dazzled soon enough! Will your new empire shine through the ages of history?",
+
+        "declaringWar": "You won't ever be able to bother me again. Go meet Yama.",
+		"attacked": "Fool! I will disembowel you all!",
+		"defeated": "You have proven to be a cunning and competent adversary. I congratulate you on your victory.",
+		"introduction": "Greetings, I am Empress Wu Zetian. China desires peace and development. You leave us alone, we'll leave you alone.",
+		"neutralHello": "How are you today?",
+		"hateHello": "Oh. It's you?",
+		"tradeRequest": "My friend, do you think you can accept this request?",
+
+        "outerColor": [9, 112, 84],
+        "innerColor": [255,255,255],
+
+		//"favoredReligion": "Taoism",
+		"uniqueName": "Art of War",
+		"uniques": [
+		
+		
+		],
+		"cities": ["Beijing","Shanghai","Guangzhou","Nanjing","Xian","Chengdu","Hangzhou","Tianjin","Macau","Shandong",
+			"Kaifeng","Ningbo","Baoding","Yangzhou","Harbin","Chongqing","Luoyang","Kunming","Taipei","Shenyang",
+			"Taiyuan","Tainan","Dalian","Lijiang","Wuxi","Suzhou","Maoming","Shaoguan","Yangjiang","Heyuan","Huangshi",
+			"Yichang","Yingtian","Xinyu","Xinzheng","Handan","Dunhuang","Gaoyu","Nantong","Weifang","Xikang"],
+        "spyNames": ["Li", "Chen", "Zhang", "Liu", "Yang", "Huang", "Zhao", "Wu", "Zhou", "Sun"]
+
+    },
+	{
+		"name": "Babylon",//巴比伦
+		"leaderName": "Nebuchadnezzar II",
+		"adjective": ["Babylonian"],
+		"startBias": ["Avoid [Tundra]"],
+		//"preferredVictoryType": "Scientific",
+
+		"startIntroPart1": "May the gods bless you, great Nebuchadnezzar, ruler of ancient Babylon! Built 5000 years ago, Babylon emerged as an empire in 1800 BC, thanks to godlike Hammurabi, The Giver of Law. Falling under the Kassites assaults then the Assyrian domination, Babylon was reborn from its ashes, gaining back its independance, and became the beacon for Arts and Learning in the ancient world. O Nebuchadnezzar, after your death, Babylon quickly fell, conquered by the mighty Persians, and then by the Greeks, until the great city disappeared forever in 141 BC.",
+		"startIntroPart2": "Great Nebuchadnezzar, Babylon's glory still lives through you and your people. Will you create a spark to enlighten the world again? Will your new empire shine through the ages of history?",
+
+		"declaringWar": "The demon wants the blood of soldiers!",
+		"attacked": "Oh well, I presume you know what you're doing.",
+		"defeated": "It is over. Perhaps now I shall have peace, at last.",
+		"introduction": "Are you real or a phantom?",
+
+		"neutralHello": "Greetings.",
+		"hateHello": "What do YOU want?!",
+
+		"tradeRequest": "It appears that you do have a reason for existing – to make this deal with me.",
+
+		"outerColor": [27,53,63],
+		"innerColor": [213,249,255],
+		//"favoredReligion": "Islam",
+		"uniqueName": "Ingenuity",
+		"uniques": [
+		
+		
+		],
+		"cities": ["Babylon","Akkad","Dur-Kurigalzu","Nippur","Borsippa","Sippar","Opis","Mari","Shushan","Eshnunna",
+			"Ellasar","Erech","Kutha","Sirpurla","Neribtum","Ashur","Ninveh","Nimrud","Arbela","Nuzi",
+			"Arrapkha","Tutub","Shaduppum","Rapiqum","Mashkan Shapir","Tuttul","Ramad","Ana","Haradum","Agrab",
+			"Uqair","Gubba","Hafriyat","Nagar","Shubat Enlil","Urhai","Urkesh","Awan","Riblah","Tayma"],
+        "spyNames": ["Rim-Sin II", "Smerdis", "Ilum-ma-ili", "Peshgaldaramesh", "Ur-zigurumaš", "Semiramis", "Em", "Ishtar", "Bilit Taauth", "Aruru"]
+	},
+	
+	
+	
+	
+	
+	{
+		"name": "Ethiopia",//埃塞俄比亚
+		"leaderName": "Haile Selassie",
+		"adjective": ["ethiopian"],
+		"startBias": ["Jungle"],
+		//"preferredVictoryType": "Cultural",
+
+        "startIntroPart1": "",
+        "startIntroPart2": "",
+
+        "declaringWar": "I have tried all other avenues, but yet you persist in this madness. I hope, for your sake, your end is swift.",
+		"attacked": "It is silence that allows evil to triumph. We will not stand mute and allow you to continue on this mad quest unchecked.",
+		"defeated": "God and history will remember your actions this day. I hope you are ready for your impending judgment.",
+		"introduction": "A thousand welcomes to our fair nation. I am Selassie, the Ras Tafari Makonnen and Emperor of Ethiopia, your humble servant.",
+		"tradeRequest": "I request that you consider this offer between our two peoples. I believe it will do us both good.",
+		"afterPeace": "Today is the day on which we defeated our enemy. However, we shall only rejoice in our hearts, and in the spirit of heaven.",
+
+		"neutralHello": "Welcome.",
+		"neutralLetsHearIt": ["Continue.","I am listening.","Yes?"],
+		"neutralNo": ["It is not right.","We oppose because it is not right.","But I feel the agreement is done."],
+		"neutralYes": ["Great.","An agreement has been reached.","Our heart and soul is very much satisfied."],
+
+		"hateHello": "What do you want?",
+		"hateLetsHearIt": ["You said it.","What?","Continue."],
+		"hateNo": ["That is unacceptable.","You are not sure about it.","Please repeat for me."],
+		"hateYes": ["Fine, in my understanding.","It is clear.","It is clear."],
+
+        "outerColor": [18, 66, 22],
+        "innerColor": [255, 56, 56],
+
+		//"favoredReligion": "Christianity",
+		"uniqueName": "Spirit of Adwa",
+		"uniques": [
+		
+		
+		
+		            ],
+		"cities": ["Addis Ababa","Harar","Adwa","Lalibela","Gondar","Axum","Dire Dawa","Bahir Dar","Adama",
+			"Mek'ele","Awasa","Jimma","Jijiga","Dessie","Debre Berhan","Shashamane","Debre Zeyit","Sodo","Hosaena",
+			"Nekemte","Asella","Dila","Adigrat","Debre Markos","Kombolcha","Debre Tabor","Sebeta",
+			"Shire","Ambo","Negele Arsi","Gambela","Ziway","Weldiya"],
+        "spyNames": ["Mulu Ken", "Wendimu", "Li'ol", "Demeke", "Mulu Alem", "Abebech", "Zema", "Mihret", "Kebedech", "Alemnesh"]
+    },
+	{
+		"name": "The Maya",//玛雅
+		"leaderName": "Pacal",
+		"adjective": ["mayan"],
+		"startBias": ["Jungle"],
+		//"preferredVictoryType": "Scientific",
+
+        "startIntroPart1": "",
+        "startIntroPart2": "",
+
+        "declaringWar": "A sacrifice unlike all others must be made!",
+		"attacked": "Muahahahahahaha!",
+		"defeated": "Today comes a great searing pain. With you comes the path to the black storm.",
+		"introduction": "Greetings, wayward one. I am known as Pacal.",
+		"tradeRequest": "Friend, I believe I may have found a way to save us all! Look, look and accept my offering!",
+
+		"neutralHello": "A fine day, it helps you.",
+/* Not used by Unciv, and uncertain
+		"afterPeace": "",
+
+		"neutralLetsHearIt": ["If you must show me."],
+		"neutralNo": ["No no, too much trouble.","No!","Not good enough."],
+		"neutralYes": ["Okay.","Fine.","Accepted."],
+
+		"hateHello": "You.",
+		"hateLetsHearIt": ["Talk.","So?","Speak!"],
+		"hateNo": ["That's unacceptable!","A thousand times no!","Never!"],
+		"hateYes": ["Oh… Fine, okay."],
+*/
+		"outerColor": [198, 141, 99],
+		"innerColor": [24, 63, 66],
+		//"favoredReligion": "Christianity",
+		"uniqueName": "The Long Count",
+		"uniques": [
+		
+		
+		
+		
+		
+			],
+ 		// Parameters: tech, comment, amount, comment. Compare "Free [Great General] appears" as used by policies
+		"cities": ["Palenque","Tikal","Chichen Itza","Uxmal","Tulum","Copan","Coba","El Mirador","Calakmul",
+			"Edzna","Lamanai","Izapa","Uaxactun","Comalcalco","Piedras Negras","Cancuen","Yaxha","Quirigua",
+			"Q'umarkaj","Nakbe","Cerros","Xunantunich","Takalik Abaj","Cival","San Bartolo","Altar de Sacrificios","Seibal",
+			"Caracol","Naranjo","Dos Pilas","Mayapan","Ixinche","Zaculeu","Kabah"],
+        "spyNames": ["Camazotz", "Coyopa", "Gukumatz", "Hunahpu", "Huracan", "Ixchel", "Ixtab", "Kukulkán", "Xbalanque", "Zipacna"]
+    },
+	{
+		"name": "Egypt",
+		"leaderName": "Ramesses II",
+		"adjective": ["Egyptian"],
+		"startBias": ["Avoid [Jungle]","Avoid [Forest]"],
+		//"preferredVictoryType": "Cultural",
+		//"personality": "Ramesses II",
+
+        "startIntroPart1": "O great Ramesses, Pharaoh of Egypt, bright as the Sun and mighty as the Nile! Lord of all living things, you lead the greatest of all civilizations, which has gifted the world with writing, advanced mathematics, sculpture, and architecture. Egyptian monuments and culture will continue to amaze the world for thousands of years.",
+        "startIntroPart2": "Mighty and eternal Ramesses, Egypt lasted for millenia, whereas other civilisations disappeared into dust after a few centuries. Amun-Ra blesses you again to lead Egypt and its people on the path of light. Will your new empire shine through the ages of history?",
+
+		"declaringWar": "You are but a pest on this Earth, prepare to be eliminated!",
+		"attacked": "You are a fool who evokes pity. You have brought my hostility upon yourself and your repulsive civilization!",
+		"defeated": "Strike me down and my soul will torment yours forever, you have won nothing.",
+		"introduction": "Greetings, I am Ramesses the god. I am the living embodiment of Egypt, mother and father of all civilizations.",
+
+		"neutralHello": "Good day.",
+		"hateHello": "Oh, it's you.",
+
+		"tradeRequest": "Generous Egypt makes you this offer.",
+
+		"outerColor": [255, 252, 3],
+		"innerColor": [83, 0, 208],
+		//"favoredReligion": "Islam",
+		"uniqueName": "Monument Builders",
+		"uniques": [
+		
+		
+		],
+		"cities": ["Thebes","Memphis","Heliopolis","Elephantine","Alexandria","Pi-Ramesses","Giza","Byblos","Akhetaten",
+			   "Hieraconpolis","Abydos","Asyut","Avaris","Lisht","Buto","Edfu","Pithom","Busiris","Kahun","Athribis",
+			   "Mendes","Elashmunein","Tanis","Bubastis","Oryx","Sebennytus","Akhmin","Karnak","Luxor","El Kab","Armant",
+			   "Balat","Ellahun","Hawara","Dashur","Damanhur","Abusir","Herakleopolis","Akoris",
+			   "Benihasan","Badari","Hermopolis","Amrah","Koptos","Ombos","Naqada","Semna","Soleb"],
+        "spyNames": ["Refaat", "Heba", "Salah", "Ahmed", "Zakaria", "Bastet", "Ma'at", "Nebhet", "Tefenet", "Neuth"]
+    },
+	{
+		"name": "England",
+		"leaderName": "Elizabeth",
+		"adjective": ["English"],
+		"startBias": ["Coast"],
+		//"preferredVictoryType": "Diplomatic",
+		//"personality": "Elizabeth",
+
+        "startIntroPart1": "Long live to Your Highness, Queen Elizabeth Gloriana, leader and protector of the glorious England! Through history, enduring many invasions, England strengthened its will, playing smartly with diplomacy, cunning, and military power, to eventually rose as one of the most dominant Empires the world has ever known. Their matchless navy, brilliant scientists and artists, and powerful merchants, have shaped the known world for centuries.",
+        "startIntroPart2": "Queen Elizabeth, will England cast once more its brightness upon all lands and seas of the world? Will your new empire shine through the ages of history?",
+
+        "declaringWar": "By the grace of God, your days are numbered.",
+		"attacked": "We shall never surrender.",
+		"defeated": "You have triumphed over us. The day is yours.",
+		"introduction": "We are pleased to meet you.",
+		"neutralHello": "Hello, again.",
+		"hateHello": "Oh, it's you!",
+		"tradeRequest": "Would you be interested in a trade agreement with England?",
+		"outerColor": [109, 2, 0],
+		"innerColor": [255, 255, 255],
+		//"favoredReligion": "Christianity",
+		"uniqueName": "Sun Never Sets",
+		"uniques": [
+		
+		
+		],
+		"cities": ["London","York","Nottingham","Hastings","Canterbury","Coventry","Warwick","Newcastle","Oxford","Liverpool",
+			"Dover","Brighton","Norwich","Leeds","Reading","Birmingham","Richmond","Exeter","Cambridge","Gloucester",
+			"Manchester","Bristol","Leicester","Carlisle","Ipswich","Portsmouth","Berwick","Bath","Mumbles","Southampton",
+			"Sheffield","Salisbury","Colchester","Plymouth","Lancaster","Blackpool","Winchester","Hull"],
+        "spyNames": ["James", "Scarlett", "Mycroft", "Charlotte", "Gwendolyn", "Mr. Eks", "Dr. Grey", "Andrew", "Scott", "Anne"]
+    },
+	{
+		"name": "France",
+		"leaderName": "Napoleon",
+		"adjective": ["French"],
+		//"preferredVictoryType": "Cultural",
+		//"personality": "Napoleon",
+
+        "startIntroPart1": "Vive Napoleon I, First Consul and Emperor of France! After the glorious Revolution which suppressed the centuries-old monarchy, the French nation stood at the heart of Europe as a Republic, and intended to export its ideals to the entire European continent, either by diplomacy or war. The French Capital Paris was more than ever the world center of Culture, Arts, and Letters. With its Great Army, reputed as one of the greatest in the History, France fought gloriously all surrounding enemies, but eventually fell against the coalition of other European powers.",
+        "startIntroPart2": "Napoleon Bonaparte, ruler of the French people, will you rebuild the Empire to take revenge on your foes, and make again of its Capital the City of Lights? Will your new empire shine through the ages of history?",
+
+        "declaringWar": "You're disturbing us, prepare for war.",
+		"attacked": "You've fallen into my trap. I'll bury you.",
+		"defeated": "I congratulate you for your victory.",
+		"introduction": "Welcome. I'm Napoleon, of France; the smartest military man in world history.",
+		"neutralHello": "Hello.",
+		"hateHello": "It's you.",
+		"tradeRequest": "France offers you this exceptional proposition.",
+
+        "outerColor": [ 38, 98, 255],
+        "innerColor": [239,236,148],
+
+		//"favoredReligion": "Christianity",
+		"uniqueName": "Ancien Régime",
+		"uniques": [
+		
+		
+		
+		],
+		"cities": ["Paris","Orleans","Lyon","Troyes","Tours","Marseille","Chartres","Avignon","Rouen","Grenoble",
+			"Dijon","Amiens","Cherbourg","Poitiers","Toulouse","Bayonne","Strasbourg","Brest","Bordeaux","Rennes",
+			"Nice","Saint Etienne","Nantes","Reims","Le Mans","Montpellier","Limoges","Nancy","Lille","Caen","Toulon",
+			"Le Havre","Lourdes","Cannes","Aix-En-Provence","La Rochelle","Bourges","Calais"],
+        "spyNames": ["Jean-Paul", "Martine", "Lucien", "François", "Augustine", "Monsieur X", "Dr. Dupont", "Vipère", "Yvette", "Renard"]
+    },
+	{
+		"name": "Greece",//希腊
+		"leaderName": "Alexander",
+		"adjective": ["Greek"],
+		"startBias": ["Coast"],
+		//"preferredVictoryType":"Diplomatic",
+
+		"startIntroPart1": "",
+		"startIntroPart2": "",
+
+		"declaringWar": "You are in my way, you must be destroyed.",
+		"attacked": "As a matter of fact I too grow weary of peace.",
+		"defeated": "You have somehow become my undoing! What kind of beast are you?",
+		"introduction": "Hello stranger! I am Alexandros, son of kings and grandson of the gods!",
+
+		"neutralHello": "Greetings!",
+		"hateHello": "What?",
+
+		"tradeRequest": "My friend, does this seem reasonable to you?",
+
+		"outerColor": [255, 255, 255],
+		"innerColor": [65, 141, 254],
+		//"favoredReligion": "Christianity",
+		"uniqueName": "Hellenic League",
+		"uniques": [
+		
+		
+		],
+		"cities": ["Athens","Sparta","Corinth","Argos","Knossos","Mycenae","Pharsalos","Ephesus","Halicarnassus","Rhodes",
+			"Eretria","Pergamon","Miletos","Megara","Phocaea","Sicyon","Tiryns","Samos","Mytilene","Chios",
+			"Paros","Elis","Syracuse","Herakleia","Gortyn","Chalkis","Pylos","Pella","Naxos","Sicyon",
+			"Larissa","Apollonia","Messene","Orchomenos","Ambracia","Kos","Knidos","Amphipolis",
+			"Patras","Lamia","Nafplion","Apolyton"],
+        "spyNames": ["Jason", "Helena", "Alexa", "Cletus", "Kassandra", "Andres", "Desdemona", "Anthea", "Aeneas", "Leander"]
+    },
+    
+	// City-States sorted by cityStateType, name
+
+
+
+
+	//Barbarian
+	{
+		"name": "Barbarians",
+		"outerColor": [0,0,0],
+        "innerColor": [185,12,12],
+		"uniques": [
+		//"Can only heal by pillaging"
+		]
+	},
+
+
+
+]
