@@ -13,14 +13,14 @@ ResourceIcons/Bison
   index: -1
 ResourceIcons/Food point
   rotate: false
-  xy: 428, 388
+  xy: 428, 280
   size: 90, 90
   orig: 90, 90
   offset: 0, 0
   index: -1
 ResourceIcons/Gold point
   rotate: false
-  xy: 428, 300
+  xy: 660, 710
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
@@ -67,11 +67,221 @@ UnitIcons/Castle Embrasure
   orig: 512, 512
   offset: 0, 0
   index: -1
+UnitIcons/Frame Archery Range
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Frame Blacksmith
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Frame Castle
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Frame Castle Embrasure
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Frame Market
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Frame Palisade Wall
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Frame Stable
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Frame Stone Wall
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Frame Town Center
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Frame University
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Frame Watchtower
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Frame Workshop
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Training Archer
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Training Catapult
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Training Chariot Archer
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Training Composite Bowman
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Training Crossbowman
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Training Horseman
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Training Knight
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Training Lancer
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Training Longswordsman
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Training Official of the court
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Training Pikeman
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Training Scout
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Training Spearman
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Training Swordsman
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Training Trebuchet
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Training Warrior
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Training Worker
+  rotate: false
+  xy: 428, 378
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
 UnitIcons/Market
   rotate: false
   xy: 732, 870
   size: 128, 128
   orig: 128, 128
+  offset: 0, 0
+  index: -1
+UnitIcons/Official of the court
+  rotate: false
+  xy: 732, 798
+  size: 64, 64
+  orig: 64, 64
   offset: 0, 0
   index: -1
 UnitIcons/Palisade Wall
@@ -104,7 +314,7 @@ UnitIcons/Town Center
   index: -1
 UnitIcons/University
   rotate: false
-  xy: 428, 212
+  xy: 660, 622
   size: 80, 80
   orig: 80, 80
   offset: 0, 0

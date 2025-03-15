@@ -11,7 +11,10 @@
         "name": "Army",
         "movementType": "Land"
     },
-
+    {
+        "name": "Training Army",
+        "movementType": "Air"
+    },
     
     
     
