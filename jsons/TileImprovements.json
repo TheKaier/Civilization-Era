@@ -9,7 +9,7 @@
 		"uniques": [
 		"Can also be built on tiles adjacent to fresh water",
 		"[+1 Food] <with [2] to [6] neighboring [Farm] tiles>",
-            
+            "Unpillagable",
             
             "Can be built outside your borders",
             ],
@@ -23,7 +23,7 @@
 		"techRequired": "Starting tech",
 		"uniques": [
 		"Can be built outside your borders",
-		
+		"Unpillagable",
 		
 		
 		],
@@ -31,14 +31,14 @@
 	},
 	{
 		"name": "Mine",
-		"terrainsCanBeBuiltOn": ["Hill"],
+		"terrainsCanBeBuiltOn": ["Land"],
 		"production": 2,
 		"turnsToBuild": 5,
 		"techRequired": "Starting tech",
 		"uniques": [
 		"Can be built outside your borders",
-		
-		
+		"Can only be built to improve a resource",
+		"Unpillagable",
 		],
 		"shortcutKey": "M"
 	},
@@ -129,7 +129,8 @@
 		"techRequired": "Starting tech",
 		"uniques": [
 		"Can be built outside your borders",
-		
+		"Unpillagable",
+		"Can only be built to improve a resource",
 		],
 		"shortcutKey": "F"
 	},
@@ -180,18 +181,16 @@
 		"techRequired": "Starting tech",
 		"uniques": [
 		"Can be built outside your borders",
-		"Instantly provides [100] [Wood point]",
+		"Instantly provides [250] [Wood point]",
 		
 		],
-		"shortcutKey": "X",
-        "civilopediaText": [{"text":"Provides a one-time Production bonus depending on distance to the closest city once finished"}]
 	},
 	{
 		"name": "Remove Jungle",
 		"turnsToBuild": 10,
 		"techRequired": "Starting tech",
 		"uniques": ["Can be built outside your borders",
-		"Instantly provides [100] [Wood point]",
+		"Instantly provides [250] [Wood point]",
 		
 		
 		],
@@ -200,7 +199,6 @@
 	{
 		"name": "Remove Fallout",
 		"turnsToBuild": 5,
-		// Has no tech requirements as it can always be built
 		"uniques": ["Can be built outside your borders",
 		
 		

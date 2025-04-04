@@ -2,14 +2,24 @@
     {
         "name": "Civilian",
         "movementType": "Land"
+        "uniques": [
+		"Consumes [1] [Army size]",
+		],
     },
     {
         "name": "Build",
         "movementType": "Land"
+        "uniques": [
+		"[-10] HP when healing",
+		"[+10] HP when healing <when adjacent to a [Worker] unit>",
+		],
     },
     {
         "name": "Army",
         "movementType": "Land"
+        "uniques": [
+		"Consumes [1] [Army size]",
+		],
     },
     {
         "name": "Training Army",

@@ -15,7 +15,19 @@
         "[-100]% Culture cost of adopting new Policies",
         
         
-        
+        "Provides [10] [Army size]",
         "Provides [10] [Tech point]",
+        "Archer",//tag
+        "Warrior",//tag
+        "Horseman",//tag
+        "Catapult",//tag
+        
+        
+        
+        
+        
+        
+        
+        
     ]
 }

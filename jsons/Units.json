@@ -10,8 +10,8 @@
 		"name": "Worker",
 		"unitType": "Civilian",
 		"movement": 2,
-		"uniques": ["Can build [Land] improvements on tiles",
-		
+		"uniques": ["Can build [All] improvements on tiles",
+		//"All adjacent units heal [+15] HP when healing",
 		  "[1] free [Frame Town Center] units appear <for [2] movement> <costs [200] [Wood point]> <costs [150] [Stone point]>",
 		  "[1] free [Frame Watchtower] units appear <for [2] movement> <costs [35] [Wood point]>",
 		  "[1] free [Frame Palisade Wall] units appear <for [2] movement> <costs [50] [Wood point]>",
@@ -25,13 +25,13 @@
 		  
 		  "[1] free [Frame Market] units appear <for [2] movement> <costs [50] [Wood point]> <costs [25] [Stone point]>",
 		  "[1] free [Frame University] units appear <for [2] movement> <costs [75] [Wood point]> <costs [50] [Stone point]>",
-		  
+		  "[1] free [Frame House] units appear <for [2] movement> <costs [50] [Wood point]>",
 		  
 		  "Consumes [-5] [Gold point] <in [Luxury resource] tiles> <hidden from users>",
 		  "Consumes [-10] [Food point] <in [Farm] tiles> <hidden from users>",
 		  "Consumes [-10] [Wood point] <in [Lumber mill] tiles> <hidden from users>",
 		  "Consumes [-10] [Stone point] <in [Mine] tiles> <hidden from users>",
-		  "Consumes [-5] [Food point] <in [Fishing Boats] tiles> <hidden from users>",
+		  "Consumes [-15] [Food point] <in [Fishing Boats] tiles> <hidden from users>",
 		  
 		  
 		  "Consumes [-5] [Food point] <in [Farm] tiles> <with [2] to [6] neighboring [Farm] tiles> <hidden from users>",
@@ -41,7 +41,7 @@
 		  "Consumes [-5] [Wood point] <in [Lumber mill] tiles> <when adjacent to a [Official of the court] unit> <hidden from users>",
 		  "Consumes [-5] [Food point] <in [Farm] tiles> <when adjacent to a [Official of the court] unit> <hidden from users>",
 		  "Consumes [-5] [Food point] <in [Fishing Boats] tiles> <when adjacent to a [Official of the court] unit> <hidden from users>",
-		  
+		  //"Consumes [-5] [Gold point] <in [Luxury resource] tiles> when adjacent to a [Official of the court] unit> <hidden from users>",
 		  
 		  
 		  
@@ -517,11 +517,17 @@
 		"[1] free [Training Worker] units appear <for [1] movement> <costs [50] [Food point]>",
 		"[1] free [Training Scout] units appear <for [1] movement> <costs [30] [Food point]>",
 		//中华特色单位
-    	"[1] free [Training Official of the court] units appear <for [1] movement> <costs [100] [Food point]> <costs [50] [Gold point]>",
+    	"[1] free [Training Official of the court] units appear <for [1] movement> <costs [100] [Food point]> <costs [50] [Gold point]> <for [China] Civilizations>",
 		
 		"[This Unit] heals [5] HP <upon losing at least [0] HP in a single attack>",
 		"Free Technology <costs [100] [Tech point]>",
 		"Can carry [1] [Training Army] units",
+		"Consumes [-10] [Army size]",
+		
+		
+		
+		
+		
 		],
 		//"attackSound": ""
 	},
@@ -634,7 +640,11 @@
 		"[1] free [Training Composite Bowman] units appear <for [1] movement> <costs [75] [Food point]> <costs [25] [Gold point]> <after discovering [Composite Bowman]>",
 		"[1] free [Training Crossbowman] units appear <for [1] movement> <costs [125] [Food point]> <costs [40] [Gold point]> <after discovering [Crossbowman]>",
 		"[This Unit] heals [5] HP <upon losing at least [0] HP in a single attack>",
-		"Can carry [1] [Training Army] units",
+		"Can carry [1] [Archer] units",
+		
+		
+		
+		
 		],
 		//"attackSound": ""
 	},
@@ -656,7 +666,7 @@
 		"[1] free [Training Knight] units appear <for [1] movement> <costs [175] [Food point]> <costs [40] [Gold point]> <after discovering [Knight]>",
 		"[1] free [Training Lancer] units appear <for [1] movement> <costs [175] [Food point]> <costs [40] [Gold point]> <after discovering [Lancer]>",
 		"[This Unit] heals [5] HP <upon losing at least [0] HP in a single attack>",
-		"Can carry [1] [Training Army] units",
+		"Can carry [1] [Horseman] units",
 		],
 		//"attackSound": ""
 	},
@@ -678,7 +688,7 @@
 		"[1] free [Training Longswordsman] units appear <for [1] movement> <costs [125] [Food point]> <costs [40] [Gold point]> <after discovering [Longswordsman]>",
 		"[1] free [Training Pikeman] units appear <for [1] movement> <costs [100] [Food point]> <costs [25] [Gold point]> <after discovering [Pikeman]>",
 		"[This Unit] heals [5] HP <upon losing at least [0] HP in a single attack>",
-		"Can carry [1] [Training Army] units",
+		"Can carry [1] [Warrior] units",
 		],
 		//"attackSound": ""
 	},
@@ -698,7 +708,7 @@
 		"[1] free [Training Catapult] units appear <for [1] movement> <costs [75] [Food point]> <costs [25] [Gold point]> <after discovering [Catapult]>",
 		"[1] free [Training Trebuchet] units appear <for [1] movement> <costs [125] [Food point]> <costs [40] [Gold point]> <after discovering [Trebuchet]>",
 		"[This Unit] heals [5] HP <upon losing at least [0] HP in a single attack>",
-		"Can carry [1] [Training Army] units",
+		"Can carry [1] [Catapult] units",
 		],
 		//"attackSound": ""
 	},
@@ -750,7 +760,25 @@
 		],
 		//"attackSound": ""
 	},
-	
+	{
+		"name": "House",//住宅
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 100,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Consumes [-10] [Army size]",
+		"[This Unit] heals [5] HP <upon losing at least [0] HP in a single attack>",
+		
+		],
+		//"attackSound": ""
+	},
 	
 	
 	
@@ -795,7 +823,7 @@
 		"Never appears as a Barbarian unit",
 		"Can transform to [Town Center] <when above [99] HP>",
 		"[This Unit] takes [99] damage",
-		
+		"[This Unit] takes [100] damage <costs [-120] [Wood point]><costs [-120] [Stone point]>",
 		],
 		//"attackSound": ""
 	},
@@ -814,6 +842,7 @@
 		"Never appears as a Barbarian unit",
 		"Can transform to [Watchtower] <when above [99] HP>",
 		"[This Unit] takes [30] damage",
+		"[This Unit] takes [100] damage <costs [-21] [Wood point]>",
 		],
 		//"attackSound": ""
 	},
@@ -832,6 +861,7 @@
 		"Never appears as a Barbarian unit",
 		"Can transform to [Palisade Wall] <when above [99] HP>",
 		"[This Unit] takes [30] damage",
+		"[This Unit] takes [100] damage <costs [-30] [Wood point]>",
 		],
 		//"attackSound": ""
 	},
@@ -850,6 +880,7 @@
 		"Never appears as a Barbarian unit",
 		"Can transform to [Stone Wall] <when above [99] HP>",
 		"[This Unit] takes [30] damage",
+		"[This Unit] takes [100] damage <costs [-30] [Stone point]>",
 		],
 		//"attackSound": ""
 	},
@@ -868,6 +899,7 @@
 		"Never appears as a Barbarian unit",
 		"Can transform to [Castle] <when above [99] HP>",
 		"[This Unit] takes [99] damage",
+		"[This Unit] takes [100] damage <costs [-120] [Wood point]><costs [-180] [Stone point]>",
 		],
 		//"attackSound": ""
 	},
@@ -886,6 +918,7 @@
 		"Never appears as a Barbarian unit",
 		"Can transform to [Castle Embrasure] <when above [99] HP>",
 		"[This Unit] takes [99] damage",
+		"[This Unit] takes [100] damage <costs [-120] [Wood point]><costs [-180] [Stone point]>",
 		],
 		//"attackSound": ""
 	},
@@ -907,6 +940,7 @@
 		"Never appears as a Barbarian unit",
 		"Can transform to [Archery Range] <when above [99] HP>",
 		"[This Unit] takes [60] damage",
+		"[This Unit] takes [100] damage <costs [-45] [Wood point]>",
 		],
 		//"attackSound": ""
 	},
@@ -925,6 +959,7 @@
 		"Never appears as a Barbarian unit",
 		"Can transform to [Stable] <when above [99] HP>",
 		"[This Unit] takes [60] damage",
+		"[This Unit] takes [100] damage <costs [-60] [Wood point]><costs [-30] [Stone point]>",
 		],
 		//"attackSound": ""
 	},
@@ -943,6 +978,7 @@
 		"Never appears as a Barbarian unit",
 		"Can transform to [Blacksmith] <when above [99] HP>",
 		"[This Unit] takes [60] damage",
+		"[This Unit] takes [100] damage <costs [-45] [Wood point]><costs [-45] [Stone point]>",
 		],
 		//"attackSound": ""
 	},
@@ -961,6 +997,7 @@
 		"Never appears as a Barbarian unit",
 		"Can transform to [Workshop] <when above [99] HP>",
 		"[This Unit] takes [60] damage",
+		"[This Unit] takes [100] damage <costs [-30] [Wood point]><costs [-60] [Stone point]>",
 		],
 		//"attackSound": ""
 	},
@@ -982,6 +1019,7 @@
 		"Never appears as a Barbarian unit",
 		"Can transform to [Market] <when above [99] HP>",
 		"[This Unit] takes [40] damage",
+		"[This Unit] takes [100] damage <costs [-30] [Wood point]><costs [-15] [Stone point]>",
 		],
 		//"attackSound": ""
 	},
@@ -1000,10 +1038,29 @@
 		"Never appears as a Barbarian unit",
 		"Can transform to [University] <when above [99] HP>",
 		"[This Unit] takes [40] damage",
+		"[This Unit] takes [100] damage <costs [-45] [Wood point]><costs [-30] [Stone point]>",
 		],
 		//"attackSound": ""
 	},
-	
+	{
+		"name": "Frame House",//住宅
+		"unitType": "Build",
+		//"range": 3,
+		//"rangedStrength": 15,
+		"movement": 1,
+		"strength": 50,
+		"cost": 0,
+		"uniques": [
+		"Cannot attack",
+		"Cannot move",
+		"No defensive terrain bonus"
+		"Never appears as a Barbarian unit",
+		"Can transform to [House] <when above [99] HP>",
+		"[This Unit] takes [20] damage",
+		"[This Unit] takes [100] damage <costs [-30] [Wood point]>",
+		],
+		//"attackSound": ""
+	},
 
 	
 	
@@ -1018,8 +1075,8 @@
 		"Cannot attack",
 		"Cannot move",
 		"[This Unit] takes [20] damage",
-		"Can transform to [Worker] <when above [99] HP>",
-		
+		"Can transform to [Worker] <when above [99] HP> <when above [0] [Army size]>",
+		"[This Unit] takes [100] damage <costs [-30] [Food point]>",
 		
 		
 		],
@@ -1035,7 +1092,8 @@
 		"Cannot attack",
 		"Cannot move",
 		"[This Unit] takes [20] damage",
-		"Can transform to [Scout] <when above [99] HP>",
+		"Can transform to [Scout] <when above [99] HP> <when above [0] [Army size]>",
+		"[This Unit] takes [100] damage <costs [-18] [Food point]>",
 		],
 		"attackSound": "nonmetalhit"
 	},
@@ -1054,8 +1112,9 @@
         "Cannot attack",
 		"Cannot move",
 		"[This Unit] takes [20] damage",
-		"Can transform to [Archer] <when above [99] HP>",
-        
+		"Can transform to [Archer] <when above [99] HP> <when above [0] [Army size]>",
+		"[This Unit] takes [100] damage <costs [-30] [Food point]>",
+        "Archer",//tag
         ],
         //"attackSound": ""
     },
@@ -1074,8 +1133,9 @@
         "Cannot attack",
 		"Cannot move",
 		"[This Unit] takes [30] damage",
-		"Can transform to [Composite Bowman] <when above [99] HP>",
-        
+		"Can transform to [Composite Bowman] <when above [99] HP> <when above [0] [Army size]>",
+		"[This Unit] takes [100] damage <costs [-45] [Food point]>",
+        "Archer",//tag
         ],
         //"attackSound": ""
     },
@@ -1096,8 +1156,9 @@
         "Cannot attack",
 		"Cannot move",
 		"[This Unit] takes [40] damage",
-		"Can transform to [Crossbowman] <when above [99] HP>",
-        
+		"Can transform to [Crossbowman] <when above [99] HP> <when above [0] [Army size]>",
+		"[This Unit] takes [100] damage <costs [-75] [Food point]>",
+        "Archer",//tag
         ],
         //"attackSound": ""
     },
@@ -1117,8 +1178,9 @@
         "Cannot attack",
 		"Cannot move",
 		"[This Unit] takes [20] damage",
-		"Can transform to [Warrior] <when above [99] HP>",
-        
+		"Can transform to [Warrior] <when above [99] HP> <when above [0] [Army size]>",
+		"[This Unit] takes [100] damage <costs [-30] [Food point]>",
+        "Warrior",//tag
         
         ],
         //"attackSound": ""
@@ -1138,8 +1200,9 @@
         "Cannot attack",
 		"Cannot move",
 		"[This Unit] takes [30] damage",
-		"Can transform to [Swordsman] <when above [99] HP>",
-		
+		"Can transform to [Swordsman] <when above [99] HP> <when above [0] [Army size]>",
+		"[This Unit] takes [100] damage <costs [-45] [Food point]>",
+		"Warrior",//tag
 		
         ],
         //"attackSound": ""
@@ -1159,9 +1222,9 @@
         "Cannot attack",
 		"Cannot move",
 		"[This Unit] takes [40] damage",
-		"Can transform to [Longswordsman] <when above [99] HP>",
-		
-		
+		"Can transform to [Longswordsman] <when above [99] HP> <when above [0] [Army size]>",
+		"[This Unit] takes [100] damage <costs [-75] [Food point]>",
+		"Warrior",//tag
         ],
         //"attackSound": ""
     },
@@ -1180,8 +1243,9 @@
         "Cannot attack",
 		"Cannot move",
 		"[This Unit] takes [20] damage",
-		"Can transform to [Spearman] <when above [99] HP>",
-        
+		"Can transform to [Spearman] <when above [99] HP> <when above [0] [Army size]>",
+		"[This Unit] takes [100] damage <costs [-30] [Food point]>",
+        "Warrior",//tag
         ],
         //"attackSound": ""
     },
@@ -1200,8 +1264,9 @@
         "Cannot attack",
 		"Cannot move",
 		"[This Unit] takes [30] damage",
-		"Can transform to [Pikeman] <when above [99] HP>",
-        
+		"Can transform to [Pikeman] <when above [99] HP> <when above [0] [Army size]>",
+		"[This Unit] takes [100] damage <costs [-60] [Food point]>",
+        "Warrior",//tag
         
         ],
         //"attackSound": ""
@@ -1221,10 +1286,10 @@
         "Cannot attack",
 		"Cannot move",
 		"[This Unit] takes [30] damage",
-		"Can transform to [Horseman] <when above [99] HP>",
+		"Can transform to [Horseman] <when above [99] HP> <when above [0] [Army size]>",
+        "Horseman",//tag
         
-        
-        
+        "[This Unit] takes [100] damage <costs [-60] [Food point]>",
         ],
         //"attackSound": ""
     },
@@ -1243,9 +1308,9 @@
         "Cannot attack",
 		"Cannot move",
 		"[This Unit] takes [30] damage",
-		"Can transform to [Chariot Archer] <when above [99] HP>",
-        
-        
+		"Can transform to [Chariot Archer] <when above [99] HP> <when above [0] [Army size]>",
+        "[This Unit] takes [100] damage <costs [-60] [Food point]>",
+        "Horseman",//tag
         ],
         //"attackSound": ""
     },
@@ -1264,8 +1329,9 @@
         "Cannot attack",
 		"Cannot move",
 		"[This Unit] takes [40] damage",
-		"Can transform to [Knight] <when above [99] HP>",
-        
+		"Can transform to [Knight] <when above [99] HP> <when above [0] [Army size]>",
+        "Horseman",//tag
+        "[This Unit] takes [100] damage <costs [-105] [Food point]>",
         ],
         //"attackSound": ""
     },
@@ -1284,8 +1350,9 @@
         "Cannot attack",
 		"Cannot move",
 		"[This Unit] takes [40] damage",
-		"Can transform to [Lancer] <when above [99] HP>",
-        
+		"Can transform to [Lancer] <when above [99] HP> <when above [0] [Army size]>",
+        "Horseman",//tag
+        "[This Unit] takes [100] damage <costs [-105] [Food point]>",
         ],
         //"attackSound": ""
     },
@@ -1304,9 +1371,9 @@
         "Cannot attack",
 		"Cannot move",
 		"[This Unit] takes [30] damage",
-		"Can transform to [Catapult] <when above [99] HP>",
-		
-		
+		"Can transform to [Catapult] <when above [99] HP> <when above [0] [Army size]>",
+		"[This Unit] takes [100] damage <costs [-45] [Food point]>",
+		"Catapult",//tag
         ],
         //"attackSound": ""
     },
@@ -1325,8 +1392,9 @@
         "Cannot attack",
 		"Cannot move",
 		"[This Unit] takes [40] damage",
-		"Can transform to [Trebuchet] <when above [99] HP>",
-        
+		"Can transform to [Trebuchet] <when above [99] HP> <when above [0] [Army size]>",
+        "Catapult",//tag
+        "[This Unit] takes [100] damage <costs [-75] [Food point]>",
         ],
         //"attackSound": ""
     },
@@ -1356,7 +1424,7 @@
 		"Cannot move",
 		"[This Unit] takes [30] damage",
 		"Can transform to [Official of the court] <when above [99] HP>",
-		
+		"[This Unit] takes [100] damage <costs [-60] [Food point]>",
 		],
 		"cost": 45
 	},
